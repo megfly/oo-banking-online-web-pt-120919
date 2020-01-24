@@ -22,10 +22,6 @@ class Transfer
       else
          self.status = "rejected"
          "Transaction rejected. Please check your account balance."
-      end
-    else
-       self.status = "rejected"
-       "Transaction rejected. Please check your account balance."
     
     # if status is pending then subtract cash from senders balance, add cash to receivers balance, transaction complete... it can reject if sender doesnt have enough funds.
     end 
