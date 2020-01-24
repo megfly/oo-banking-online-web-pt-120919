@@ -20,7 +20,7 @@ class Transfer
         self.receiver.balance += amount
         self.status = "complete"
       else
-         self.status = "rejected"
+         @status = "rejected"
          "Transaction rejected. Please check your account balance."
     
     # if status is pending then subtract cash from senders balance, add cash to receivers balance, transaction complete... it can reject if sender doesnt have enough funds.
